@@ -24,7 +24,7 @@ class UsersSignupTest<ActionDispatch::IntegrationTest
         }
     }
 end
-assert_equal1,ActionMailer::Base.deliveries.size
+assert_equal 1, ActionMailer::Base.deliveries.size
 user=assigns(:user)
 assert_not user.activated?
 # Try to log in before activation.
